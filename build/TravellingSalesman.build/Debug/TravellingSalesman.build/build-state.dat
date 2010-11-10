@@ -1,176 +1,0 @@
-TTravellingSalesman
-v7
-r0
-t311109254.709513
-cCheck dependencies
-cCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/main.o /Volumes/Data/Projects/TravellingSalesman/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-cCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Map.o /Volumes/Data/Projects/TravellingSalesman/Map.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-cCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Solution.o /Volumes/Data/Projects/TravellingSalesman/Solution.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-cLd /Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman normal x86_64
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004ABBF0FD00000000000000EE
-t1253830909
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
-c000000004A5C14A000000000000004F1
-t1247548576
-s1265
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
-c000000004A5C14A70000000000004174
-t1247548583
-s16756
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
-c000000004A5C14A70000000000002DF5
-t1247548583
-s11765
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
-c000000004A5C14A70000000000001731
-t1247548583
-s5937
-
-N/Volumes/Data/Projects/TravellingSalesman/City.h
-c000000004CDAE4B800000000000000C9
-t1289413816
-s201
-
-N/Volumes/Data/Projects/TravellingSalesman/Map.cpp
-c000000004CDAEE5B000000000000052A
-t1289416283
-s1322
-i"Map.h"
-
-N/Volumes/Data/Projects/TravellingSalesman/Map.h
-c000000004CDAED8700000000000001A7
-t1289416071
-s423
-i<stdio.h>
-i<stdlib.h>
-i<vector.h>
-i"City.h"
-i"config.h"
-
-N/Volumes/Data/Projects/TravellingSalesman/Solution.cpp
-c000000004CDAEEE200000000000005F0
-t1289416418
-s1520
-i"Solution.h"
-
-N/Volumes/Data/Projects/TravellingSalesman/Solution.h
-c000000004CDAEE970000000000000218
-t1289416343
-s536
-i<iostream>
-i<string.h>
-i<math.h>
-i<vector.h>
-i"Map.h"
-i"City.h"
-i"config.h"
-
-N/Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman
-t1289416442
-s78320
-
-N/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Map.o
-t1289416442
-s181320
-
-N/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Solution.o
-t1289416442
-s186532
-
-N/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/TravellingSalesman.LinkFileList
-c000000004CDAD0B20000000000000192
-t1289408690
-s402
-
-N/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/main.o
-t1289416442
-s125876
-
-N/Volumes/Data/Projects/TravellingSalesman/config.h
-c000000004CDAEEF900000000000000F9
-t1289416441
-s249
-
-N/Volumes/Data/Projects/TravellingSalesman/main.cpp
-c000000004CDAEE9C00000000000005F7
-t1289416348
-s1527
-i<iostream>
-i<string.h>
-i"Map.h"
-i"Solution.h"
-i"City.h"
-i"config.h"
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies311109254#311109254#0(0"0(0#1#0"4324404680#0"0#
-
-CCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Map.o /Volumes/Data/Projects/TravellingSalesman/Map.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s311109241.956039
-e311109242.486676
-r1
-xCompileC
-xbuild/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Map.o
-x/Volumes/Data/Projects/TravellingSalesman/Map.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,
-o                 from /Volumes/Data/Projects/TravellingSalesman/Map.h:13,
-o                 from /Volumes/Data/Projects/TravellingSalesman/Map.cpp:10:
-o/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.
-lSLF07#2@57"Compile /Volumes/Data/Projects/TravellingSalesman/Map.cpp311109241#311109242#0(698"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,                 from /Volumes/Data/Projects/TravellingSalesman/Map.h:13,                 from /Volumes/Data/Projects/TravellingSalesman/Map.cpp:10:/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.1(22@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.311109242#247#451#4(7@71"In file included from /Volumes/Data/Projects/TravellingSalesman/Map.cpp311109242#18446744073709551615#0#0(6@49"/Volumes/Data/Projects/TravellingSalesman/Map.cpp311109083#10#0#10#0#0"0(7@69"In file included from /Volumes/Data/Projects/TravellingSalesman/Map.h311109242#18446744073709551615#0#0(6@47"/Volumes/Data/Projects/TravellingSalesman/Map.h311108871#13#0#13#0#0"0(7@92"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h311109242#18446744073709551615#0#0(6@70"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h275368770#59#0#59#0#0"0(13@438"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. in /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h311109242#18446744073709551615#0#0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#0"0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#10"#warning *0(0#0#49"/Volumes/Data/Projects/TravellingSalesman/Map.cpp4324404680#1567"    cd /Volumes/Data/Projects/TravellingSalesman    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-generated-files.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-own-target-headers.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-all-target-headers.hmap -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-project-headers.hmap -F/Volumes/Data/Projects/TravellingSalesman/build/Debug -I/Volumes/Data/Projects/TravellingSalesman/build/Debug/include -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources/x86_64 -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources -c /Volumes/Data/Projects/TravellingSalesman/Map.cpp -o /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Map.o0#
-
-CCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Solution.o /Volumes/Data/Projects/TravellingSalesman/Solution.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s311109242.432587
-e311109242.880621
-r1
-xCompileC
-xbuild/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Solution.o
-x/Volumes/Data/Projects/TravellingSalesman/Solution.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,
-o                 from /Volumes/Data/Projects/TravellingSalesman/Solution.h:14,
-o                 from /Volumes/Data/Projects/TravellingSalesman/Solution.cpp:10:
-o/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.
-lSLF07#2@62"Compile /Volumes/Data/Projects/TravellingSalesman/Solution.cpp311109242#311109242#0(708"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,                 from /Volumes/Data/Projects/TravellingSalesman/Solution.h:14,                 from /Volumes/Data/Projects/TravellingSalesman/Solution.cpp:10:/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.1(22@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.311109242#257#451#4(7@76"In file included from /Volumes/Data/Projects/TravellingSalesman/Solution.cpp311109242#18446744073709551615#0#0(6@54"/Volumes/Data/Projects/TravellingSalesman/Solution.cpp311109218#10#0#10#0#0"0(7@74"In file included from /Volumes/Data/Projects/TravellingSalesman/Solution.h311109242#18446744073709551615#0#0(6@52"/Volumes/Data/Projects/TravellingSalesman/Solution.h311109143#14#0#14#0#0"0(7@92"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h311109242#18446744073709551615#0#0(6@70"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h275368770#59#0#59#0#0"0(13@438"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. in /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h311109242#18446744073709551615#0#0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#0"0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#10"#warning *0(0#0#54"/Volumes/Data/Projects/TravellingSalesman/Solution.cpp4324404680#1577"    cd /Volumes/Data/Projects/TravellingSalesman    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-generated-files.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-own-target-headers.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-all-target-headers.hmap -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-project-headers.hmap -F/Volumes/Data/Projects/TravellingSalesman/build/Debug -I/Volumes/Data/Projects/TravellingSalesman/build/Debug/include -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources/x86_64 -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources -c /Volumes/Data/Projects/TravellingSalesman/Solution.cpp -o /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/Solution.o0#
-
-CCompileC build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/main.o /Volumes/Data/Projects/TravellingSalesman/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s311109241.955284
-e311109242.432514
-r1
-xCompileC
-xbuild/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/main.o
-x/Volumes/Data/Projects/TravellingSalesman/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,
-o                 from /Volumes/Data/Projects/TravellingSalesman/Map.h:13,
-o                 from /Volumes/Data/Projects/TravellingSalesman/main.cpp:6:
-o/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.
-lSLF07#2@58"Compile /Volumes/Data/Projects/TravellingSalesman/main.cpp311109241#311109242#0(698"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h:59,                 from /Volumes/Data/Projects/TravellingSalesman/Map.h:13,                 from /Volumes/Data/Projects/TravellingSalesman/main.cpp:6:/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.1(22@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.311109242#247#451#4(7@72"In file included from /Volumes/Data/Projects/TravellingSalesman/main.cpp311109242#18446744073709551615#0#0(6@50"/Volumes/Data/Projects/TravellingSalesman/main.cpp311109148#6#0#6#0#0"0(7@69"In file included from /Volumes/Data/Projects/TravellingSalesman/Map.h311109242#18446744073709551615#0#0(6@47"/Volumes/Data/Projects/TravellingSalesman/Map.h311108871#13#0#13#0#0"0(7@92"In file included from /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h311109242#18446744073709551615#0#0(6@70"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/vector.h275368770#59#0#59#0#0"0(13@438"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. in /Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h311109242#18446744073709551615#0#0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#0"0(6@80"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward/backward_warning.h275368770#32#0#32#0#10"#warning *0(0#0#50"/Volumes/Data/Projects/TravellingSalesman/main.cpp4324404680#1569"    cd /Volumes/Data/Projects/TravellingSalesman    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D_GLIBCXX_DEBUG=1 -D_GLIBCXX_DEBUG_PEDANTIC=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-generated-files.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-own-target-headers.hmap -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-all-target-headers.hmap -iquote /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/TravellingSalesman-project-headers.hmap -F/Volumes/Data/Projects/TravellingSalesman/build/Debug -I/Volumes/Data/Projects/TravellingSalesman/build/Debug/include -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources/x86_64 -I/Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/DerivedSources -c /Volumes/Data/Projects/TravellingSalesman/main.cpp -o /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/main.o0#
-
-CLd /Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman normal x86_64
-s311109242.880693
-e311109242.902662
-r1
-xLd
-x/Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman
-xnormal
-xx86_64
-lSLF07#2@77"Link /Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman311109242#311109242#0(0"0(0#0#0"4324404680#557"    cd /Volumes/Data/Projects/TravellingSalesman    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Volumes/Data/Projects/TravellingSalesman/build/Debug -F/Volumes/Data/Projects/TravellingSalesman/build/Debug -filelist /Volumes/Data/Projects/TravellingSalesman/build/TravellingSalesman.build/Debug/TravellingSalesman.build/Objects-normal/x86_64/TravellingSalesman.LinkFileList -mmacosx-version-min=10.6 -o /Volumes/Data/Projects/TravellingSalesman/build/Debug/TravellingSalesman0#
-
