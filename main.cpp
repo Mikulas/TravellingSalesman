@@ -14,7 +14,14 @@ using namespace std;
 
 int main (int argc, char * const argv[])
 {
+	Log dump = Log();
+	
 	Map map = Map(MAP_WIDTH, MAP_HEIGHT);
+	
+	if (GENERATION_SIZE % 2 != 0) {
+		cout << "NotImplementedException thrown @ main.cpp: rulette merging not available";
+		exit(2);
+	}
 
 	cout << " - - - Traveling salesman - - - " << endl << endl;
 
@@ -30,19 +37,22 @@ int main (int argc, char * const argv[])
 	Solution nextGeneration[GENERATION_SIZE];
 	
 	// randomize first generation
+	dump << "randomize first generation";
 	for (int s = 0; s < GENERATION_SIZE; s++) {
 		generation[s] = Solution(map);
 	}
 	
 	// evolution
 	for (int g = 0; g < GENERATION_COUNT; g++) {
-		for (int s; s < GENERATION_SIZE; s += 2) {
+		dump << "generation #" << g + 1 << " out of " << GENERATION_COUNT << "\n";
+		
+		for (int s = 0; s < GENERATION_SIZE; s += 2) {
 			nextGeneration[s] = Solution(generation[s], generation[s + 1]);
 			nextGeneration[s + 1] = Solution(generation[s + 1], generation[s]);
 		}
 		
 		// move new generation solutions into the old one
-		for (int s; s < GENERATION_SIZE; s += 2) {
+		for (int s = 0; s < GENERATION_SIZE; s += 2) {
 			generation[s] = nextGeneration[s];
 		}
 	}

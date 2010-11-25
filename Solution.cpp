@@ -16,6 +16,7 @@ Solution::Solution()
 
 Solution::Solution(Map map)
 {
+	Log dump = Log();
 	vector<CITY> cities = map.getCities();
 	vector<CITY> remaining = map.getCities();
 	vector<CITY> temp;
@@ -39,33 +40,71 @@ Solution::Solution(Map map)
 		}
 		temp.clear();
 	}
+	
+	dump << "\tnew random solution:\n";
+	for (int c = 0; c < CITIES; c++) {
+		dump << "\t\t" << this->path[c].x << "; " << this->path[c].y << "\n";
+	}
 }
 
 
 Solution::Solution(Solution s1, Solution s2)
 {
-	for (int c = 0; c < CITIES; c++) {
-		if (c < CITIES / 2) {
-			this->path[c] = s1.path[c];
-		} else {
-			this->path[c] = s2.path[c];
+	Log dump = Log();
+	int preference = CITIES / 2;
+	
+	vector<CITY> cities;
+	for (int i = 0; i < CITIES; i++) {
+		cities.push_back(s1.path[i]);
+	}
+	
+	// take first half from the first solution
+	for (int c = 0; c < preference; c++) {
+		this->path[c] = s1.path[c];
+		for (int i = 0; i < cities.size(); i++) {
+			if (cities[i].x == s1.path[c].x && cities[i].y == s1.path[c].y) {
+				cities.erase(cities.begin() + i);
+			}
 		}
+	}
+	
+	/*cout << "remaining cities to be taken from s2" << endl;
+	for (int i = 0; i < cities.size(); i++) {
+		cout << cities[i].x << "; " << cities[i].y << endl;
+	}
+	cout << endl;*/
+	
+	int index = preference;
+	// and compute the second half as remaining cities in order of second solution	
+	for (int i = 0; i < CITIES; i++) {
+		for (int c = 0; c < cities.size(); c++) {
+			if (s2.path[i].x == cities[c].x && s2.path[i].y == cities[c].y) {
+				this->path[index] = s2.path[i];
+				index++;
+				break;
+			}
+		}
+	}
+	
+	dump << "\tnew solution by merge:\n";
+	for (int i = 0; i < CITIES; i++) {
+		dump << "\t\t" << this->path[i].x << "; " << this->path[i].y << "\n";
 	}
 }
 
 
-unsigned long Solution::getDistance(CITY city1, CITY city2)
+double Solution::getDistance(CITY city1, CITY city2)
 {
-	int dx = 0, dy = 0;
-	dx = city1.x - city2.x;
-	dy = city1.y - city2.y;
-	return sqrt(dx^2 + dy^2);
+	double dx = 0, dy = 0;
+	dx = abs((long) (city1.x - city2.x));
+	dy = abs((long) (city1.y - city2.y));
+	return sqrt(dx * dx + dy * dy);
 }
 
 
-unsigned long Solution::getFitness()
+double Solution::getFitness()
 {
-	int fitness = 0;
+	double fitness = 0;
 	for(int c = 0; c < CITIES - 1; c++) {
 		fitness += getDistance(this->path[c], this->path[c + 1]);
 	}
@@ -76,7 +115,7 @@ unsigned long Solution::getFitness()
 void Solution::print()
 {
 	int perline = 0;
-	for(int c = 0; c < CITIES - 1; c++) {
+	for(int c = 0; c < CITIES; c++) {
 		printf("[%.3ld-%.3ld]", this->path[c].x , this->path[c].y);
 		perline++;
 		if (perline > 7) {

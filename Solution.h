@@ -24,12 +24,12 @@ class Solution
 {
 private:
 	CITY path[CITIES];
-	unsigned long getDistance(CITY, CITY);
+	double getDistance(CITY, CITY);
 public:
 	Solution();
 	Solution(Map);
 	Solution(Solution, Solution);
 	Solution(CITY[CITIES]);
-	unsigned long getFitness();
+	double getFitness();
 	void print();
 };

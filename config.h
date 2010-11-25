@@ -1,3 +1,5 @@
+#pragma once
+
 /*
  *  config.h
  *  TravellingSalesman
@@ -7,9 +9,10 @@
  *
  */
 
+#define MAP_HEIGHT 10
+#define MAP_WIDTH 10
+#define CITIES 10
+#define GENERATION_SIZE 16
+#define GENERATION_COUNT 16
 
-#define MAP_HEIGHT 5
-#define MAP_WIDTH 5
-#define CITIES 2
-#define GENERATION_SIZE 2
-#define GENERATION_COUNT 1
+#include "log.h"
