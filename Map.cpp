@@ -61,7 +61,7 @@ Map Map::print()
 		printf("%.4d:", h + 1);
 		
 		for (int w = 0; w < MAP_WIDTH; w++) {
-			cout << " " << (this->content[h][w] ? "⌂" : ".");
+			cout << " " << (this->content[h][w] ? "\033[1;32m⌂\033[0m" : "\033[34m.\033[0m");
 		}
 		cout << endl;
 	}

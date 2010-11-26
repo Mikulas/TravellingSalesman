@@ -28,7 +28,7 @@ int main (int argc, char * const argv[])
 		exit(3);
 	}
 
-	cout << " - - - Traveling salesman - - - " << endl << endl;
+	cout << "- - - \033[1;32mTraveling salesman\033[0m - - - " << endl << endl;
 
 	for (int i; i < CITIES;) {
 		if (map.addCity(rand() % MAP_WIDTH, rand() % MAP_HEIGHT)) {
@@ -37,6 +37,8 @@ int main (int argc, char * const argv[])
 	}
 	
 	map.print();
+	
+	cout << "\n";
 
 	// randomize first generation
 	dump << "randomize first generation";
@@ -49,12 +51,12 @@ int main (int argc, char * const argv[])
 		generation = Generation(generation, true);
 	}
 	
-	cout << "\n";
+	cout << "\r                                                    \n";
 	
 	Solution solution = generation.getBestSolution();
 	
 	// print best found solution
-	cout << endl << " - - - SOLUTION - - - " << endl;
+	cout << endl << "- - - \033[1;32mSolution\033[0m - - - " << endl;
 	cout << "fitness: " << solution.getFitness() << endl;
 	solution.print();
 	cout << endl << endl;

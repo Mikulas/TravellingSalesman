@@ -111,7 +111,11 @@ void Solution::print()
 {
 	int perline = 0;
 	for(int c = 0; c < CITIES; c++) {
-		printf("[%.3ld-%.3ld]", this->path[c].x + 1, this->path[c].y + 1);
+		printf("[\033[32m%.3ld\033[0m; \033[32m%.3ld\033[0m]", this->path[c].x + 1, this->path[c].y + 1);
+		if (c != CITIES - 1) {
+			cout << ", ";
+		}
+		
 		perline++;
 		if (perline > 7) {
 			cout << endl;
