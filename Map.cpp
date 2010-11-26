@@ -39,28 +39,33 @@ Map Map::print()
 	cout << "      ";
 	char buffer[3];
 	for (int w = 0; w < MAP_WIDTH; w++) {
-		sprintf(buffer, "%d", w);
-		cout << buffer[0] << " ";
+		if (sprintf(buffer, "%d", w + 1) != 2) {
+			cout << "  ";
+		} else {
+			cout << buffer[0] << " ";
+		}
 	}
 	cout << endl;
 	cout << "      ";
 	for (int w = 0; w < MAP_WIDTH; w++) {
-		if (sprintf(buffer, "%d", w) != 2) {
-			buffer[1] = ' ';
+		if (sprintf(buffer, "%d", w + 1) != 2) {
+			cout << buffer[0] << " ";
+		} else {
+			cout << buffer[1] << " ";
 		}
-		cout << buffer[1] << " ";
 	}
 	cout << endl;
 
 	// content
 	for (int h = 0; h < MAP_HEIGHT; h++) {
-		printf("%.4d:", h);
+		printf("%.4d:", h + 1);
 		
 		for (int w = 0; w < MAP_WIDTH; w++) {
 			cout << " " << (this->content[h][w] ? "⌂" : ".");
 		}
 		cout << endl;
 	}
+	
 	return *this;
 }
 

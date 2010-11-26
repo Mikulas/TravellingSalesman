@@ -43,7 +43,7 @@ Solution::Solution(Map map)
 	
 	dump << "\tnew random solution:\n";
 	for (int c = 0; c < CITIES; c++) {
-		dump << "\t\t" << this->path[c].x << "; " << this->path[c].y << "\n";
+		dump << "\t\t" << this->path[c].x + 1 << "; " << this->path[c].y + 1 << "\n";
 	}
 }
 
@@ -68,14 +68,8 @@ Solution::Solution(Solution s1, Solution s2)
 		}
 	}
 	
-	/*cout << "remaining cities to be taken from s2" << endl;
-	for (int i = 0; i < cities.size(); i++) {
-		cout << cities[i].x << "; " << cities[i].y << endl;
-	}
-	cout << endl;*/
-	
 	int index = preference;
-	// and compute the second half as remaining cities in order of second solution	
+	// compute the second half as remaining cities in order of second solution	
 	for (int i = 0; i < CITIES; i++) {
 		for (int c = 0; c < cities.size(); c++) {
 			if (s2.path[i].x == cities[c].x && s2.path[i].y == cities[c].y) {
@@ -86,14 +80,14 @@ Solution::Solution(Solution s1, Solution s2)
 		}
 	}
 	
-	dump << "\tnew solution by merge:\n";
+	dump << "new solution by merge:\n";
 	for (int i = 0; i < CITIES; i++) {
-		dump << "\t\t" << this->path[i].x << "; " << this->path[i].y << "\n";
+		dump << "\t" << this->path[i].x + 1 << "; " << this->path[i].y + 1 << "\n";
 	}
 }
 
 
-double Solution::getDistance(CITY city1, CITY city2)
+double Solution::getDistance(CITY city1, CITY city2) const
 {
 	double dx = 0, dy = 0;
 	dx = abs((long) (city1.x - city2.x));
@@ -102,12 +96,13 @@ double Solution::getDistance(CITY city1, CITY city2)
 }
 
 
-double Solution::getFitness()
+double Solution::getFitness() const
 {
+	// this needs caching
 	double fitness = 0;
 	for(int c = 0; c < CITIES - 1; c++) {
 		fitness += getDistance(this->path[c], this->path[c + 1]);
-	}
+	}	
 	return fitness;
 }
 
@@ -116,7 +111,7 @@ void Solution::print()
 {
 	int perline = 0;
 	for(int c = 0; c < CITIES; c++) {
-		printf("[%.3ld-%.3ld]", this->path[c].x , this->path[c].y);
+		printf("[%.3ld-%.3ld]", this->path[c].x + 1, this->path[c].y + 1);
 		perline++;
 		if (perline > 7) {
 			cout << endl;

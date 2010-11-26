@@ -9,10 +9,10 @@
  *
  */
 
-#define MAP_HEIGHT 10
-#define MAP_WIDTH 10
-#define CITIES 10
-#define GENERATION_SIZE 16
-#define GENERATION_COUNT 16
+#define MAP_HEIGHT 20
+#define MAP_WIDTH 20
+#define CITIES 5
+#define GENERATION_SIZE 500
+#define GENERATION_COUNT 2000
 
 #include "log.h"

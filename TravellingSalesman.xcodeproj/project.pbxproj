@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3070CD8D129FF31D009DA3F8 /* Generation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3070CD8C129FF31D009DA3F8 /* Generation.cpp */; };
 		30AE6598128AE5FB0037D886 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6597128AE5FB0037D886 /* Map.cpp */; };
 		30AE665F128B07050037D886 /* Solution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30AE665E128B07050037D886 /* Solution.cpp */; };
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -29,6 +30,8 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		30166577129EFD2D00264897 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		3070CD8B129FF31D009DA3F8 /* Generation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generation.h; sourceTree = "<group>"; };
+		3070CD8C129FF31D009DA3F8 /* Generation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generation.cpp; sourceTree = "<group>"; };
 		309FE051128B236A00D1903D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		30AE6596128AE5FB0037D886 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
 		30AE6597128AE5FB0037D886 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				30AE6778128B1B2D0037D886 /* City.h */,
 				309FE051128B236A00D1903D /* config.h */,
 				30166577129EFD2D00264897 /* log.h */,
+				3070CD8B129FF31D009DA3F8 /* Generation.h */,
+				3070CD8C129FF31D009DA3F8 /* Generation.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
 				30AE6598128AE5FB0037D886 /* Map.cpp in Sources */,
 				30AE665F128B07050037D886 /* Solution.cpp in Sources */,
+				3070CD8D129FF31D009DA3F8 /* Generation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
