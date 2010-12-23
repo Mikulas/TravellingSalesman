@@ -325,21 +325,21 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3098C39212A021B400CA2708</string>
+										<string>3098C39A12A026A200CA2708</string>
 										<key>history</key>
 										<array>
-											<string>3070CDD5129FF815009DA3F8</string>
 											<string>3070CECA12A009F0009DA3F8</string>
 											<string>3070CECC12A009F0009DA3F8</string>
 											<string>3070CFDD12A019A9009DA3F8</string>
 											<string>3070CFDE12A019A9009DA3F8</string>
-											<string>3070CFF812A01C04009DA3F8</string>
-											<string>3070CFFA12A01C04009DA3F8</string>
-											<string>3070CFFB12A01C04009DA3F8</string>
-											<string>3098C37F12A020EB00CA2708</string>
 											<string>3098C38612A0210D00CA2708</string>
 											<string>3098C38A12A0212D00CA2708</string>
-											<string>3098C38512A0210D00CA2708</string>
+											<string>3098C39412A026A200CA2708</string>
+											<string>3098C39512A026A200CA2708</string>
+											<string>3098C39612A026A200CA2708</string>
+											<string>3098C39712A026A200CA2708</string>
+											<string>3098C39812A026A200CA2708</string>
+											<string>3098C39912A026A200CA2708</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -539,9 +539,9 @@
 	<array>
 		<string>3098C36212A01F5700CA2708</string>
 		<string>3098C36312A01F5700CA2708</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>30AE6580128AE58F0037D886</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Volumes/Data/Projects/TravellingSalesman/TravellingSalesman.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -891,7 +891,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1280, 927}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1922 112 1280 968 1920 56 1280 1024 </string>
+								<string>1920 112 1280 968 1920 56 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -920,11 +920,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>1922 112 1280 968 1920 56 1280 1024 </string>
+			<string>1920 112 1280 968 1920 56 1280 1024 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
